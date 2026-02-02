@@ -90,6 +90,7 @@
         style="width: 100%"
         v-loading="loading"
         class="fund-table"
+        max-height="400"
       >
         <el-table-column prop="code" label="基金代码" width="120" />
         <el-table-column prop="name" width="200" label="基金名称" />
@@ -438,7 +439,6 @@ onUnmounted(() => {
 
 /* 表格容器样式，用于在移动端显示滚动条 */
 .table-container {
-  overflow-x: auto;
   border-radius: 8px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
