@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import DefineOptions from 'unplugin-vue-define-options/vite';
  
 export default defineConfig({
+  base: '/fund/',
   plugins: [
     vue(),
     DefineOptions() // 如果需要支持旧的Options API语法糖特性，可以启用这个插件
